@@ -7,6 +7,6 @@ public class Lab3Exercises {
 		myFrame.setLocationRelativeTo(null);
 		myFrame.setSize(200, 200);
 		myFrame.setVisible(true);
-		//Change for commit and push
+		//Change for commit and push 1
 	}
 }
