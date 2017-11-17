@@ -73,7 +73,7 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.WHITE);
                         g.drawPolygon(p2);
                         
-                        //This is a comment to test push and commit. dgsjhvdjhsa
+                        //This is a comment to test push and commit. dgsjhvdjhsa Change again
                     
             }
 }
