@@ -6,6 +6,10 @@ public class Lab3Exercises {
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		myFrame.setLocationRelativeTo(null);
 		myFrame.setSize(200, 200);
+		
+		// Problem 6 code
+		MyPanelClass myPanel = new MyPanelClass();
+        myFrame.getContentPane().add(myPanel);
 		myFrame.setVisible(true);
 		//Change for commit and push 1
 	}
