@@ -23,8 +23,10 @@ public class MyPanelClass extends JPanel {
                         int width = x2 - x1;
                         int height = y2 - y1;
  
+                        
+                        
                         //Paint the background
-                        g.setColor(Color.DARK_GRAY);
+                        g.setColor(Color.WHITE);
                         g.fillRect(x1, y1, width, height);
                         g.fillRect(x1, y1, width + 1, height + 1);
                         
@@ -59,6 +61,23 @@ public class MyPanelClass extends JPanel {
 //                        g.setColor(Color.YELLOW);
 //                        g.fillPolygon(p);
                         
+                       
+                        
+                        //Creating and adding stripes
+                        //g.drawRect(0,0,width,(height/5));  
+                        g.setColor(Color.RED);  
+                        g.fillRect(0,0,width + 1,(height/5));  
+                        g.fillRect(0,(2)*(height/5),width + 1,(height/5));
+                        g.fillRect(0,((4)*(height/5)),width + 1,(height/5));
+                        
+                        
+                        
+                        int[] xPoints = {0,width/2,0};
+                        int[] yPoints = {0,height/2,height};
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(xPoints, yPoints, 3);
+                        
+                       //Star
                         Polygon p2 = new Polygon();
                         p2.addPoint(x1 + 25, y1 + 73);
                         p2.addPoint(x1 + 41, y1 + 73);
@@ -71,7 +90,10 @@ public class MyPanelClass extends JPanel {
                         p2.addPoint(x1 + 34, y1 + 98);
                         p2.addPoint(x1 + 38, y1 + 83);
                         g.setColor(Color.WHITE);
-                        g.drawPolygon(p2);
+                        g.fillPolygon(p2);
+
+
+                        
                         
                         //This is a comment to test push and commit. dgsjhvdjhsa Change again
                     
